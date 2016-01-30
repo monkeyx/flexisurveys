@@ -1,0 +1,27 @@
+<% form_for @question_set do |f| %>
+<%=f.hidden_field :survey_id %>
+<table>
+	<tr>
+		<th><%=f.label :name%>*</th>
+		<td><%=f.text_field :name%>
+			<%=show_help "The name of the set is for your benefit so you can identify common sets of questions easily."%>
+		</td>
+		<td><%= f.error_message_on :name %></td>
+	</tr>
+	<tr>
+		<th><%=f.label :instructions%></th>
+		<td><%=f.text_area :instructions, :cols => 40, :rows => 10 %>
+			<%=show_help "These instructions are presented at the top, before the prompt, for all questions in this set."%>
+		</td>
+		<td><%= f.error_message_on :instructions %></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<%=f.submit action_name%>
+		</td>
+	</tr>
+</table>
+<p>* required field</p>
+<% end %>
+
+<%=render :partial => '/features', :locals => {:lhs => [link_to('Back', @question_set.id ? @question_set : @question_set.survey )], :rhs => []} %>

@@ -1,0 +1,59 @@
+<h2>Welcome <%=h current_admin_user.login %> <span class="right" style="font-size: 10px"><%=link_to "[Account Settings]", account_path %></span></h2>
+<hr class="clear"/>
+<table>
+	<tr>
+		<th>Account Type:</th>
+		<td><%=h current_admin_user.account_type%></td>
+	</tr>
+	<tr>
+		<th>Maximum number of surveys:</th>
+		<td><%=h current_admin_user.max_surveys%></td>
+	</tr>
+	<tr>
+		<th>Maximum sets of questions per survey:</th>
+		<td><%=h current_admin_user.max_question_sets%></td>
+	</tr>
+	<tr>
+		<th>Maximum number of questions per set:</th>
+		<td><%=h current_admin_user.max_questions%></td>
+	</tr>
+	<tr>
+		<th>Maximum number of answers per question:</th>
+		<td><%=h current_admin_user.max_question_answers%></td>
+	</tr>
+	<tr>
+		<th>Maximum number of participants per survey:</th>
+		<td><%=h current_admin_user.max_respondents%></td>
+	</tr>
+</table>
+<hr class="clear"/>
+
+<% for survey in @surveys %>
+<h2><%=h survey.name%><%if survey.archived? %> (ARCHIVED)<%end%></h2>
+<% unless survey.archived %>
+<%=render :partial => '/features', :locals => {
+:rhs => 
+	[helpful_link_to('Save Data', csv_path(survey), "Save the data gathered from participants in a format convenient for use with your spreadsheet programme."),
+	helpful_link_to('Export Survey', xml_path(survey),"Save the entire survey to your local computer in XML format"),
+	helpful_link_to('Archive', survey, "WARNING: This closes the survey to further participation and editing.", :confirm => 'Are you sure you want to archive this survey and close it to any more participants forever?', :method => :delete)
+	], 
+:lhs => 
+	[helpful_link_to('View Survey', survey.url, "See your survey as your participants will see it." ), 
+	 helpful_link_to('Edit Survey', survey, "Change your survey, add new questions and more.")] 
+}%>
+<% else %>
+<%=render :partial => '/features', :locals => {
+:lhs => 
+	[helpful_link_to('Save Data', csv_path(survey), "Save the data gathered from participants in a format convenient for use with your spreadsheet programme."),
+	helpful_link_to('Export Survey', xml_path(survey),"Save the entire survey to your local computer in XML format")
+	], 
+:rhs => []
+}%>
+<% end %>
+<% end %>
+<%=render :partial => '/features', :locals => {
+:lhs => 
+	[link_to('Create New Survey', :action => :new)], 
+:rhs => 
+	[link_to('Import Survey (XML)', :action => :import)] 
+}%>

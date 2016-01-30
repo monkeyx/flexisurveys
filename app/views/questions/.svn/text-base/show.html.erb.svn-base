@@ -1,0 +1,20 @@
+<h2>Q: <%=@question.prompt%></h2>
+<% if @question.answers.any? && @question.given_answers.any? %>
+	<%=render :partial => "/question_bar", :locals => {:question => @question} %>
+<% end %>
+<%
+	sub_question_link = @question.parent_question ? "#{new_question_path}?question_set=#{@question.question_set.id}&question=#{@question.parent_question.id}" : "#{new_question_path}?question_set=#{@question.question_set.id}&question=#{@question.id}" 
+%>
+<%=render :partial => '/features',
+	:locals => {
+		:lhs => [link_to('New Answer', "#{new_question_answer_path}?question=#{@question.id}")] + 
+					@question.answers.map{|qa|link_to("A: #{qa.prompt}",edit_question_answer_path(qa))} +
+					@question.children.map{|qc|link_to("Q: #{qc.prompt}",qc)} + 
+				[helpful_link_to('New Sub-Question', sub_question_link, "Sub-questions are a way of sequencing questions to always appear after this question.")],
+		:rhs => [
+			helpful_link_to('Edit Question', edit_question_path, "Change the prompt for this question"),
+			helpful_link_to('Archive Question', @question, "Remove this question from the survey", :confirm => 'Are you sure?', :method => :delete),
+			link_to('Back to ' + (@question.parent_question ? 'Parent Question' : 'Set'), @question.parent_question ? @question.parent_question : @question.question_set),
+			link_to('Back to Survey', @question.question_set.survey)
+]
+}%>

@@ -1,0 +1,59 @@
+<h3 class="right">Question <%=(@user.current_question_index + 1)%> of <%=@user.total_questions %></h3>
+<% unless @question.question_set.instructions.blank? %>
+<div id="instruction">
+	<%=@question.question_set.instructions %>
+</div>
+<% end %>
+<h2><%=@question.prompt %></h2>
+<% form_for(@survey_answer, :url => @survey.full_path ) do |f| %>
+	<%=f.hidden_field :question_id %>
+	<span><%= f.error_message_on :question_answer_id %></span>
+	<span><%= f.error_message_on :answer_detail %></span>
+	<% if @question.answers.size > 11 %>
+		<table>
+			<% x = 1 %>
+		<% @question.answers.each do |answer| %>
+		<% if x % 3 == 1 %><tr><% end %>
+		<td cellspacing="4" cellpadding="2">
+			<% if answer.answer_type == "radio" %>		
+			<%=f.radio_button :question_answer_id, answer.id %><%=h answer.prompt %>
+			<% elsif answer.answer_type == "text" %>
+			<%=f.radio_button :question_answer_id, answer.id %>
+			<%=h answer.prompt %>: <input type="text" name="answer_detail[]" value=""/>
+			<% elsif answer.answer_type == "multi_text" %>
+			<%=f.radio_button :question_answer_id, answer.id %>
+			<%=h answer.prompt %>: <br/>
+			<textarea name="answer_detail[]" id="answer_details" rows="5" cols="40"></textarea>
+			<% end %>
+		</td>
+		
+		<% if x % 3 == 0 %></tr><% end %>
+		<% x = x + 1 %>
+		<% end %>
+		</table>
+	<% else %>
+		<% 
+		list = @question.answers.to_a
+		list = list.reverse if @question.answers.size > 2 && @question.answers.size < 11 && rand(100) < 50
+		%>
+		<% list.each do |answer| %>
+		<p>
+			<% if answer.answer_type == "radio" %>		
+			<%=f.radio_button :question_answer_id, answer.id %><%=h answer.prompt %>
+			<% elsif answer.answer_type == "text" %>
+			<%=f.radio_button :question_answer_id, answer.id %>
+			<%=h answer.prompt %>: <input type="text" name="answer_detail[]" value=""/>
+			<% elsif answer.answer_type == "multi_text" %>
+			<%=f.radio_button :question_answer_id, answer.id %>
+			<%=h answer.prompt %>: <br/>
+			<textarea name="answer_detail[]" id="answer_details" rows="5" cols="40"></textarea>
+			<% end %>
+		</p>
+		<% end %>
+	<% end %>
+	<p>
+	<%=f.submit @user.has_more_questions? ? 'Next' : 'Complete' %>
+	</p>
+<% end %>
+
+<%=render :partial => '/features', :locals => {:lhs => [link_to('Skip Question', "?skip=yes", :method => :post)], :rhs => []} %>

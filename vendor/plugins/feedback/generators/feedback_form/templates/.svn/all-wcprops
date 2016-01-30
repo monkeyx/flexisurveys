@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/feedback/generators/feedback_form/templates
+END
+feedbacks_controller_test.rb.erb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/feedback/generators/feedback_form/templates/feedbacks_controller_test.rb.erb
+END
+feedbacks_controller.rb.erb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/feedback/generators/feedback_form/templates/feedbacks_controller.rb.erb
+END
+feedbacks_helper.rb.prototype.erb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/feedback/generators/feedback_form/templates/feedbacks_helper.rb.prototype.erb
+END
+prototype.feedback.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/feedback/generators/feedback_form/templates/prototype.feedback.js
+END
+feedback_mailer_test.rb.erb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/feedback/generators/feedback_form/templates/feedback_mailer_test.rb.erb
+END
+feedback_mailer.rb.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/feedback/generators/feedback_form/templates/feedback_mailer.rb.erb
+END
+feedback.css
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/feedback/generators/feedback_form/templates/feedback.css
+END
+feedback_test.rb.erb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/feedback/generators/feedback_form/templates/feedback_test.rb.erb
+END
+feedback_model.rb.erb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/feedback/generators/feedback_form/templates/feedback_model.rb.erb
+END
+feedbacks_helper.rb.jquery.erb
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/feedback/generators/feedback_form/templates/feedbacks_helper.rb.jquery.erb
+END
+jquery.feedback.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/feedback/generators/feedback_form/templates/jquery.feedback.js
+END

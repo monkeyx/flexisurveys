@@ -1,0 +1,26 @@
+<h2>Sign up as a new user</h2>
+<% @admin_user.password = @admin_user.password_confirmation = nil %>
+
+<% form_for :admin_user, :url => admin_users_path do |f| -%>
+	<p><%= f.label :name %><br/>
+	<%= f.text_field :name %> <%= f.error_message_on :name %></p>
+	
+	<p><%= f.label :login %>*<br/>
+	<%= f.text_field :login %> <%= f.error_message_on :login %></p>
+	
+	<p><%= f.label :email %>*<br/>
+	<%= f.text_field :email %> <%= f.error_message_on :email %></p>
+	
+	<p><%= f.label :password %>*<br/>
+	<%= f.password_field :password %> <%= f.error_message_on :password %></p>
+	
+	<p><%= f.label :password_confirmation, 'Confirm Password' %>*<br/>
+	<%= f.password_field :password_confirmation %> <%= f.error_message_on :password_confirmation %></p>
+	<p>
+		I agree to the <%=link_to "terms and conditions", terms_path %> of Flexisurveys.com
+		<%= f.check_box :terms_accepted %> <%= f.error_message_on :terms_accepted %>
+	</p>
+	
+	<p><%= submit_tag 'Sign up' %></p>
+	<p>* required field</p>
+<% end -%>

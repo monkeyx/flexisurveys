@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/flexisurveys/!svn/ver/20/trunk/app/views/surveys
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/flexisurveys/!svn/ver/2/trunk/app/views/surveys/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/flexisurveys/!svn/ver/20/trunk/app/views/surveys/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/flexisurveys/!svn/ver/2/trunk/app/views/surveys/new.html.erb
+END
+import.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/flexisurveys/!svn/ver/16/trunk/app/views/surveys/import.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/flexisurveys/!svn/ver/16/trunk/app/views/surveys/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/flexisurveys/!svn/ver/16/trunk/app/views/surveys/_form.html.erb
+END

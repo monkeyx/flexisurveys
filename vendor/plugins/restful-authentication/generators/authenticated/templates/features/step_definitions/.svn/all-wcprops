@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/generators/authenticated/templates/features/step_definitions
+END
+ra_response_steps.rb
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/generators/authenticated/templates/features/step_definitions/ra_response_steps.rb
+END
+ra_navigation_steps.rb
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/generators/authenticated/templates/features/step_definitions/ra_navigation_steps.rb
+END
+ra_resource_steps.rb
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/generators/authenticated/templates/features/step_definitions/ra_resource_steps.rb
+END
+ra_env.rb
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/generators/authenticated/templates/features/step_definitions/ra_env.rb
+END
+rest_auth_features_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/generators/authenticated/templates/features/step_definitions/rest_auth_features_helper.rb
+END
+user_steps.rb
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/generators/authenticated/templates/features/step_definitions/user_steps.rb
+END

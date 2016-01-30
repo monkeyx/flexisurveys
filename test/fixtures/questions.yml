@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  prompt: MyString
+  question_set_id: 1
+  active: false
+
+two:
+  prompt: MyString
+  question_set_id: 1
+  active: false

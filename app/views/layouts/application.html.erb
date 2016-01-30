@@ -1,0 +1,88 @@
+<%
+user = current_user
+if user && controller_name == "quiz" && action_name == "show"
+	title =  user.survey.name 
+	subtitle = ''
+else
+	title = $APPLICATION_TITLE
+	subtitle = $APPLICATION_SUBTITLE
+end
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title><%=title%></title>
+	<%= stylesheet_link_tag 'qq' %>
+	<%= javascript_include_tag :defaults %>
+	<%= feedback_includes %>
+	<% unless controller_name == 'quiz' && action_name == 'show' %>
+	<%= feedback_tab(:position => 'top') %>
+	<% end %>
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" /> 
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'e8bc5522-f406-4db8-85fa-8ffdcb163856'});</script>
+</head>
+
+<body>
+
+  <div id="outer">
+    <div id="wrapper">
+      <div id="body-bot">
+        <div id="body-top">
+          <div id="logo">
+          	<%=image_tag 'logo.jpg', :alt => ''%>
+			<h1><%=title%></h1>
+            <p><%=subtitle%></p>
+          </div>
+          <div id="nav">
+		  <% unless controller_name == 'quiz' && action_name == 'show' %>
+		  	<%=render :partial => '/nav' %>
+		  	<div class="right" style="margin-right:20px">
+		  		<span class="st_sharethis" displayText="Share FlexiSurveys"></span>
+			</div>
+		  <% end %>
+            <div class="clear"> </div>
+          </div>
+		  <div id="page-title">
+				  <% if flash[:error]%>
+					<span class="error"><%=flash[:error]%></span>
+				  	<% flash[:error] = '' %>
+					<% end %>
+				  <% if flash[:warning]%>
+					<span class="warning"><%=flash[:warning]%></span>
+				  	<% flash[:warning] = '' %>
+				  <% end %>
+				  <% if flash[:notice]%>
+					<span class="notice"><%=flash[:notice]%></span>
+				  	<% flash[:notice] = '' %>
+				  <% end %>
+		  </div>
+		  
+          <div id="gbox">
+            <div id="gbox-top"> </div>
+            <div id="gbox-bg">
+              <div id="gbox-grd">
+              	<%=yield%>
+				<div class="clear"> </div>
+              </div>
+            </div>
+            <div id="gbox-bot"></div>
+          </div>
+		  <%if (controller_name == 'quiz' && action_name == 'show') %>
+		  <center><%=link_to "Create your own surveys at FlexiSurveys.com", $SERVER_URL%></center>
+		  <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="copyright">
+    &copy; 2011 Razavi Technologies Ltd. All rights reserved.
+  </div>
+
+</body>
+</html>

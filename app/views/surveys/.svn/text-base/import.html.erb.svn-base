@@ -1,0 +1,14 @@
+<h2>Import Survey XML Data</h2>
+
+<div>
+<% form_tag ({:action => 'import'}, 
+                        :multipart => true) do %>
+	<label>Name:</label><%= text_field_tag :name %> (optional)<br/>
+	<%= file_field_tag :upload %><br/>
+	<%= submit_tag "Upload" %>
+<% end %>
+</div>
+
+<p>
+	<%=link_to 'Back', surveys_path %>
+</p>

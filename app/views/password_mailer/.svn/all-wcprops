@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/flexisurveys/!svn/ver/16/trunk/app/views/password_mailer
+END
+forgot_password.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/flexisurveys/!svn/ver/16/trunk/app/views/password_mailer/forgot_password.html.erb
+END
+reset_password.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/flexisurveys/!svn/ver/16/trunk/app/views/password_mailer/reset_password.html.erb
+END

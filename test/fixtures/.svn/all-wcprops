@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/flexisurveys/!svn/ver/2/trunk/test/fixtures
+END
+survey_answers.yml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/flexisurveys/!svn/ver/2/trunk/test/fixtures/survey_answers.yml
+END
+surveys.yml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/flexisurveys/!svn/ver/2/trunk/test/fixtures/surveys.yml
+END
+question_sets.yml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/flexisurveys/!svn/ver/2/trunk/test/fixtures/question_sets.yml
+END
+admin_users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/flexisurveys/!svn/ver/2/trunk/test/fixtures/admin_users.yml
+END
+question_answers.yml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/flexisurveys/!svn/ver/2/trunk/test/fixtures/question_answers.yml
+END
+questions.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/flexisurveys/!svn/ver/2/trunk/test/fixtures/questions.yml
+END
+admin_roles.yml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/flexisurveys/!svn/ver/2/trunk/test/fixtures/admin_roles.yml
+END
+survey_users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/flexisurveys/!svn/ver/2/trunk/test/fixtures/survey_users.yml
+END

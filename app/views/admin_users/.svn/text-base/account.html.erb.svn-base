@@ -1,0 +1,30 @@
+<h2>Update Account Settings</h2>
+<% form_tag account_path, :method => :put do |f| %>
+<table>
+	<tr>
+		<th>Current Password:</th>
+		<td><%= password_field_tag 'old_password' %></td>
+		<td><%=show_help "Must be provided to make any changes"%></td>
+	</tr>
+	<tr>
+		<th>New Email Address (optional):</th>
+		<td><%=text_field_tag 'email'%></td>
+		<td><%=show_help "Must be a valid email address and unique on our system" %></td>
+	</tr>
+	<tr>
+		<th>New Password (optional):</th>
+		<td><%= password_field_tag 'password', {} %></td>
+		<td><%=show_help "Must be between 4 and 40 characters"%></td>
+	</tr>
+	<tr>
+		<th>Confirm New Password:</th>
+		<td><%= password_field_tag 'password_confirmation', {} %></td>
+		<td><%=show_help "Mustb e provided if changing password"%></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><%= submit_tag 'Update Account' %></td>
+	</tr>
+</table>
+<%end%>
+<%=render :partial => '/features', :locals => {:lhs => [link_to('Back', surveys_path)], :rhs => []} %>

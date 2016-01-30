@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/flexisurveys/!svn/ver/16/trunk/app/views/passwords
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/flexisurveys/!svn/ver/16/trunk/app/views/passwords/new.html.erb
+END
+reset.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/flexisurveys/!svn/ver/16/trunk/app/views/passwords/reset.html.erb
+END

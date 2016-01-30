@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  question_id: 1
+  prompt: MyString
+  answer_type: 1
+  active: false
+  order: 1
+
+two:
+  question_id: 1
+  prompt: MyString
+  answer_type: 1
+  active: false
+  order: 1

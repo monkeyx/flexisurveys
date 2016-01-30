@@ -1,0 +1,34 @@
+<% form_for @survey do |f| %>
+<table>
+	<tr>
+		<th><%=f.label :name%>*</th>
+		<td><%=f.text_field :name%> <%=show_help "This is shown at the top of the screen to all participants of your survey."%></td>
+		<td><%= f.error_message_on :name %></td>
+	</tr>
+	<tr>
+		<th><%=f.label "Address for 'I Disagree' Link"%>*</th>
+		<td><%=f.text_field :disagree_link%> <%=show_help "This is the page where participants who don't agree to the terms of your survey are taken. It may be a full URL to a page of your choosing."%></td>
+		<td><%= f.error_message_on :disagree_link %></td>
+	</tr>
+	<tr>
+		<td><%=f.label "Agreement"%>*</td>
+		<td>
+			<%=f.text_area :agreement, :rows => 10, :cols => 30%> <%=show_help "This is the agreement presented to all participants and which they must accept before taking part in your survey."%>
+		</td>
+		<td><%= f.error_message_on :agreement %></td>
+	</tr>
+	<tr>
+		<td><%=f.label :debrief%></td>
+		<td>
+			<%=f.text_area :thankyou, :rows => 10, :cols => 30%> <%=show_help "This is shown to participants after they have completed your survey and is your opportunity to thank and debrief them."%>
+		</td>
+		<td><%= f.error_message_on :thankyou %></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<%=f.submit action_name%>
+		</td>
+	</tr>
+</table>
+<% end %>
+<p>* required field</p>

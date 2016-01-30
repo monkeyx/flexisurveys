@@ -1,0 +1,12 @@
+<h2><%=@question_answer.prompt%></h2>
+<%=render :partial => '/features',
+	:locals => {
+		:rhs => [],
+		:lhs => [
+			link_to('Edit Answer', edit_question_answer_path),
+			link_to('Archive Answer', @question_answer, :confirm => 'Are you sure?', :method => :delete),
+			link_to('Back to Question', @question_answer.question),
+			link_to('Back to Set', @question_answer.question.question_set),
+			link_to('Back to Survey', @question_answer.question.question_set.survey)
+]
+}%>

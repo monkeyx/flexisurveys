@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/Rakefile
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/init.rb
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/install.rb
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/MIT-LICENSE
+END
+uninstall.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/uninstall.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/README
+END

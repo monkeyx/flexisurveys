@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  survey_id: 1
+  randomized: false
+  order: 1
+
+two:
+  name: MyString
+  survey_id: 1
+  randomized: false
+  order: 1

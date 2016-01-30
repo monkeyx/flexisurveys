@@ -1,0 +1,9 @@
+<p><b>Please read and agree to the terms below before continuing:</b></p>
+
+<div id="agreement">
+	<%=@user.survey.agreement %>
+</div>
+
+<%=render :partial => '/features', :locals => {
+	:rhs => [link_to('I agree', "?agreed=yes")], :lhs => [link_to('I disagree', @user.survey.disagree_link)]
+} %>

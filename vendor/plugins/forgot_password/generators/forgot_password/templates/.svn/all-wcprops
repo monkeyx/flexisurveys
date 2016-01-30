@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/generators/forgot_password/templates
+END
+helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/generators/forgot_password/templates/helper.rb
+END
+model.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/generators/forgot_password/templates/model.rb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/generators/forgot_password/templates/new.html.erb
+END
+controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/generators/forgot_password/templates/controller.rb
+END
+mailer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/generators/forgot_password/templates/mailer.rb
+END
+migration.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/generators/forgot_password/templates/migration.rb
+END
+forgot_password.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/generators/forgot_password/templates/forgot_password.html.erb
+END
+reset.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/generators/forgot_password/templates/reset.html.erb
+END
+reset_password.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/generators/forgot_password/templates/reset_password.html.erb
+END

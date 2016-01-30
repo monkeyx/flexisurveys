@@ -1,0 +1,9 @@
+<% 
+if @show_agreement
+%>
+<%= render :partial => 'agreement' %>
+<% elsif @completed %>
+<%=render :partial => 'thankyou' %>
+<% else %>
+<%= render :partial => 'question' %>
+<% end %>

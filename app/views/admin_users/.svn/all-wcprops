@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/flexisurveys/!svn/ver/20/trunk/app/views/admin_users
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/flexisurveys/!svn/ver/4/trunk/app/views/admin_users/new.html.erb
+END
+account.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/flexisurveys/!svn/ver/20/trunk/app/views/admin_users/account.html.erb
+END

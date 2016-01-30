@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/generators/forgot_password
+END
+USAGE
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/generators/forgot_password/USAGE
+END
+forgot_password_generator.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/flexisurveys/!svn/ver/16/trunk/vendor/plugins/forgot_password/generators/forgot_password/forgot_password_generator.rb
+END

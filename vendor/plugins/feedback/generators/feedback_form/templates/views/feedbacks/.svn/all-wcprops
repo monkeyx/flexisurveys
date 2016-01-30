@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/feedback/generators/feedback_form/templates/views/feedbacks
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/feedback/generators/feedback_form/templates/views/feedbacks/new.html.erb
+END

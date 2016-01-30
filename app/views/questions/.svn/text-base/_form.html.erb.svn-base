@@ -1,0 +1,44 @@
+<% form_for @question do |f| %>
+<input type="hidden" name="survey" value="<%=@survey.id%>">
+<table>
+	<tr>
+		<th>Set:</th>
+		<td>
+			<%=f.select :question_set_id, options_from_models(@survey.question_sets, true, :name, "New") %>
+			<%=show_help "Every question belongs to a set of similar questions. Either choose an existing set or select new to have a new set generated for this question."%>
+		</td>
+	</tr>	
+	<tr>
+		<th><%=f.label :prompt%>*</th>
+		<td><%=f.text_area :prompt, :rows => 5, :cols => 50 %>
+		<%=show_help "This is the question you are asking your participants." %>
+		</td>
+		<td><%= f.error_message_on :prompt %></td>
+	</tr>
+	<% if @question.question_set %>
+	<tr>
+		<td><%=f.label :parent_question_id%></td>
+		<td><%=f.select :parent_question_id, options_from_models(@question.question_set.questions, true, :prompt) %>
+		<%=show_help "If you would like this question to always follow another question please select it here."%>
+		</td>
+		<td><%= f.error_message_on :parent_question_id %></td>
+	</tr>
+	<% end %>
+	<tr>
+		<td colspan="2">
+			<%=f.submit action_name%>
+		</td>
+	</tr>
+</table>
+<% end %>
+<p>* required field</p>
+<%
+if @question.parent_question
+	back_to = @question.parent_question
+elsif @question.question_set
+	back_to = @question.question_set
+else
+	back_to = @survey
+end 
+%>
+<%=render :partial => '/features', :locals => {:lhs => [link_to('Back', back_to )], :rhs => []} %>

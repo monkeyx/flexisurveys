@@ -1,0 +1,8 @@
+Your account has been updated.
+
+  Username: <%=h @admin_user.login %>
+  <% if @admin_user.password %>Password: <%=h @admin_user.password %><% end %>
+
+<% if @admin_user.activation_code %>Visit this url to activate your account:<% end %>
+
+<%=h @url %>

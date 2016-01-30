@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/role_requirement/test
+END
+test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/role_requirement/test/test_helper.rb
+END
+controller_stub.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/role_requirement/test/controller_stub.rb
+END
+authenticated_system.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/role_requirement/test/authenticated_system.rb
+END
+user_stub.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/role_requirement/test/user_stub.rb
+END

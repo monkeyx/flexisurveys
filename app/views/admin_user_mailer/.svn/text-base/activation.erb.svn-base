@@ -1,0 +1,3 @@
+<%=h @admin_user.login %>, your account has been activated.  Welcome aboard!
+
+  <%=h @url %>

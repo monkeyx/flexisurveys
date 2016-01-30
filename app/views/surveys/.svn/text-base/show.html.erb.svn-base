@@ -1,0 +1,35 @@
+<h2>Survey: <%=@survey.name%></h2>
+<p>
+	<%=link_to @survey.url, @survey.url, :title => "This is the permament address of your survey on the Internet."%>
+	<span class="st_sharethis" displayText="Share This Survey" st_url="<%=@survey.url%>" st_title="<%=@survey.name%>"></span>
+</p>
+<h2>Statistics</h2>
+<table>
+	<tr>
+		<th>Unique respondents:</th>
+		<td><%=@survey.users.size%></td>
+	</tr>
+	<tr>
+		<th>Questions answered:</th>
+		<td><%=@survey.answers_given.size%></td>
+	</tr>
+</table>
+<hr class="clear"/>
+<h2>User Agreement</h2>
+<%= @survey.agreement%>
+<hr class="clear"/>
+<h2>Thank you / Debriefing</h2>
+<%= @survey.thankyou %>
+
+<%=render :partial => '/features',
+	:locals => {
+		:lhs => [link_to('New Question', "#{new_question_path}?survey=#{@survey.id}"),
+					link_to('New Question Set', "#{new_question_set_path}?survey=#{@survey.id}")] + 
+					@survey.question_sets.map{|qs|link_to("View #{qs.name}",qs)},
+		:rhs => [
+			helpful_link_to('Edit Survey', edit_survey_path, "Change the name, agreement and debriefing for this survey." ),
+			helpful_link_to('Save Data', csv_path(@survey), "Save the data gathered from participants in a format convenient for use with your spreadsheet programme."),
+			helpful_link_to('Export Survey', xml_path(@survey), "Save the entire survey to your local computer in XML format"),
+			helpful_link_to('Archive Survey', @survey, "WARNING: This closes the survey to further participation and editing.", :confirm => 'Are you sure you want to archive this survey and close it to any more participants forever?', :method => :delete)
+]
+}%>

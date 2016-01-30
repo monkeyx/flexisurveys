@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/generators/authenticated/templates/spec/controllers
+END
+users_controller_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/generators/authenticated/templates/spec/controllers/users_controller_spec.rb
+END
+authenticated_system_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/generators/authenticated/templates/spec/controllers/authenticated_system_spec.rb
+END
+sessions_controller_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/generators/authenticated/templates/spec/controllers/sessions_controller_spec.rb
+END
+access_control_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/generators/authenticated/templates/spec/controllers/access_control_spec.rb
+END

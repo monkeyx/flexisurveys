@@ -1,0 +1,33 @@
+<% form_for @question_answer do |f| %>
+<%=f.hidden_field :question_id %>
+<%=f.hidden_field :order %>
+<table>
+	<tr>
+		<th>Question:</th>
+		<th colspan="2">
+			<%=@question_answer.question.prompt %>
+		</th>
+	</tr>
+	<tr>
+		<th><%=f.label "Label for Answer" %>*</th>
+		<td><%=f.text_field :prompt, :size => 80, :maxlength => 100%>
+		<%=show_help "This is the label for the answer participants can choose as an answer to your question." %>
+		</td>
+		<td><%= f.error_message_on :prompt %></td>
+	</tr>
+	<tr>
+		<th><%=f.label :answer_type%></th>
+		<td><%=f.select(:answer_type, QuestionAnswer::ANSWER_TYPE_COMBO_OPTIONS) %>
+		<%=show_help "The type of answer you are expecting from your participants here."%>
+		</td>
+		<td><%= f.error_message_on :answer_type %></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<%=f.submit action_name%>
+		</td>
+	</tr>
+</table>
+<% end %>
+<p>* required field</p>
+<%=render :partial => '/features', :locals => {:lhs => [link_to('Back', @question_answer.question)], :rhs => []} %>

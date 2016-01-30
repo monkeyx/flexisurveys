@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/lib
+END
+authentication.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/lib/authentication.rb
+END
+authorization.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/lib/authorization.rb
+END
+trustification.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/lib/trustification.rb
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/flexisurveys/!svn/ver/16/trunk/db/migrate
+END
+03_create_questions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/flexisurveys/!svn/ver/2/trunk/db/migrate/03_create_questions.rb
+END
+04_create_question_answers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/flexisurveys/!svn/ver/2/trunk/db/migrate/04_create_question_answers.rb
+END
+09_create_passwords.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/flexisurveys/!svn/ver/16/trunk/db/migrate/09_create_passwords.rb
+END
+00_add_session_table.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/flexisurveys/!svn/ver/2/trunk/db/migrate/00_add_session_table.rb
+END
+07_create_admin_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/flexisurveys/!svn/ver/2/trunk/db/migrate/07_create_admin_users.rb
+END
+01_create_surveys.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/flexisurveys/!svn/ver/2/trunk/db/migrate/01_create_surveys.rb
+END
+05_create_survey_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/flexisurveys/!svn/ver/2/trunk/db/migrate/05_create_survey_users.rb
+END
+08_create_admin_roles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/flexisurveys/!svn/ver/2/trunk/db/migrate/08_create_admin_roles.rb
+END
+06_create_survey_answers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/flexisurveys/!svn/ver/2/trunk/db/migrate/06_create_survey_answers.rb
+END
+02_create_question_sets.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/flexisurveys/!svn/ver/2/trunk/db/migrate/02_create_question_sets.rb
+END

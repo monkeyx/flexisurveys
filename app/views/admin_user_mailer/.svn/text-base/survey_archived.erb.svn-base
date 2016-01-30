@@ -1,0 +1,5 @@
+Survey <%=h @survey.name%> has been archived after <%=h @survey.respondents %> responses.
+
+Visit this url to export the responses to CSV:
+
+ <%=h @url %>

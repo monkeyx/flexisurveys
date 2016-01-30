@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/LICENSE
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/Rakefile
+END
+restful-authentication.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/restful-authentication.gemspec
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/TODO
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/init.rb
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/CHANGELOG
+END
+README.markdown
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/flexisurveys/!svn/ver/2/trunk/vendor/plugins/restful-authentication/README.markdown
+END

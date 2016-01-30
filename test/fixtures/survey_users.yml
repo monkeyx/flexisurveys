@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  ip_address: MyString
+  survey_id: 1
+  session_id: MyString
+
+two:
+  ip_address: MyString
+  survey_id: 1
+  session_id: MyString
